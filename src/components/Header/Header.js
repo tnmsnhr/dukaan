@@ -6,8 +6,8 @@ const Header = () => {
     return (
         <header className="header__area">
             <div className="container">
-                <section class="header__content margin-top-md margin-bottom-md">
-                    <div class="shop__image">
+                <section className="header__content margin-top-md margin-bottom-md">
+                    <div className="shop__image">
                         <img src={shopImage} alt="shop image" />
                     </div>
                     <div className="shop__description">

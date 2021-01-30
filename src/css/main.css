@@ -53,17 +53,14 @@ body {
     background-color: #146eb4; }
 
 .container {
-  width: 75vw;
+  width: 90vw;
   margin: 0 auto; }
-  @media (max-width: 1200px) {
+  @media (min-width: 550px) {
     .container {
-      width: 75vw; } }
-  @media (max-width: 900px) {
+      width: 80vw; } }
+  @media (min-width: 1000px) {
     .container {
-      width: 90vw; } }
-  @media (max-width: 550px) {
-    .container {
-      width: 90vw; } }
+      width: 95vw; } }
 
 .heading-md {
   font-weight: 600;
@@ -86,7 +83,7 @@ body {
 .navbar {
   height: 40px;
   background-color: #146eb4; }
-  @media (max-width: 900px) {
+  @media (min-width: 1000px) {
     .navbar {
       height: 46px; } }
   .navbar .navbar__area {
@@ -104,14 +101,23 @@ body {
       font-weight: 400;
       letter-spacing: normal;
       margin-right: 5px; }
+      @media (min-width: 1000px) {
+        .navbar--left p {
+          font-size: 16px; } }
     .navbar--left .navbar__logo {
       width: 80px; }
+      @media (min-width: 1000px) {
+        .navbar--left .navbar__logo {
+          width: 88px; } }
   .navbar--right p {
     font-weight: 600;
     color: #fff;
     text-transform: uppercase;
     font-size: 12px;
     border-bottom: 1px solid #fff; }
+    @media (min-width: 1000px) {
+      .navbar--right p {
+        font-size: 16px; } }
 
 .header__area {
   width: 100%;
@@ -337,22 +343,23 @@ body {
     background: #cee6fa; }
     .bottom__nav .active p {
       color: #146eb4 !important; }
-  .bottom__nav .cart__item {
+  .bottom__nav .cart__item--details {
+    display: flex;
     position: relative; }
-    .bottom__nav .cart__item span {
-      width: 16px;
-      height: 16px;
-      background: red;
-      color: #fff;
-      border-radius: 10px;
-      font-size: 12px;
-      padding: 2px;
-      position: absolute;
-      left: 20px;
-      top: 6px;
-      display: flex;
-      justify-content: center;
-      align-items: center; }
+  .bottom__nav .cart__item span {
+    width: 16px;
+    height: 16px;
+    background: red;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 2px;
+    position: absolute;
+    left: -7px;
+    top: -4px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
 
 .form__input {
   width: 100%;

@@ -13,8 +13,12 @@ const BottomNav = () => {
                     </div>
 
                     <div className="bottom__nav--item cart__item">
-                        <img src={cart}/> <p>Bag</p>
-                        <span>3</span>
+                        <section className="cart__item--details">
+                            <img src={cart}/> 
+                            <span>3</span> 
+                            <p>Bag</p>
+                        </section>
+                        
                     </div>
 
                     <div className="bottom__nav--item">

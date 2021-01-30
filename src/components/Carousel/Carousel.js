@@ -16,7 +16,7 @@ const Carousel = () => {
                 <div className="carousel__card--container">
                     {itemLists.map(item=> {
                         return (
-                            <div className="carousel__card">
+                            <div className="carousel__card" key={Math.random()}>
                                 <FoodCard image={item.image} title={item.name}/>
                             </div>
                         )

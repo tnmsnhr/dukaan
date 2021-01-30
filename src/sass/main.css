@@ -55,15 +55,6 @@ body {
 .container {
   width: 75vw;
   margin: 0 auto; }
-  @media (max-width: 1200px) {
-    .container {
-      width: 75vw; } }
-  @media (max-width: 900px) {
-    .container {
-      width: 90vw; } }
-  @media (max-width: 550px) {
-    .container {
-      width: 90vw; } }
 
 .heading-md {
   font-weight: 600;
@@ -86,9 +77,6 @@ body {
 .navbar {
   height: 40px;
   background-color: #146eb4; }
-  @media (max-width: 900px) {
-    .navbar {
-      height: 46px; } }
   .navbar .navbar__area {
     display: flex;
     justify-content: space-between;

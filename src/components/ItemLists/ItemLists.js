@@ -26,7 +26,7 @@ const ItemLists = () => {
         <div className="itemlist">
             <div className="container">
                 <h3 className="heading-md margin-top-lg margin-bottom-md">Ice Creams <span className="badge">10</span></h3>
-                {itemLists.map(item=> <ItemList item={item}/>)}
+                {itemLists.map(item=> <ItemList key={Math.random()} item={item}/>)}
 
                 <div className="see__more">
                     <h3>see all products</h3>

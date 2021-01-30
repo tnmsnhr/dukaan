@@ -33,7 +33,11 @@
     }
 
     .cart__item {
-        position: relative;
+
+        &--details{
+            display: flex;
+            position: relative;
+        }
 
         span {
             width: 16px;
@@ -44,8 +48,8 @@
             font-size: 12px;
             padding: 2px;
             position: absolute;
-            left: 20px;
-            top: 6px;
+            left: -7px;
+            top: -4px;
             display: flex;
             justify-content: center;
             align-items: center;
