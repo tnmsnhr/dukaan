@@ -1,0 +1,82 @@
+.footer__feature {
+    background-color: $color-black;
+    padding: 20px 0;
+    margin-top: 25px;
+
+    &--content {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        border-bottom: 1px solid $color-black-light;
+        padding-bottom: 20px ;
+    }
+
+    &--item {
+        width: 33.33%;
+        color: #fff;
+
+        img {
+            width: 48px;
+        }
+
+        h5 {
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 11px;
+            margin-top: 5px;
+            color: $color-grey;
+        }
+    }
+
+    .footer__bottom {
+        
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .store__details {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.534);
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+
+        .store__name {
+            font-size: 15px;
+            color: #fff;
+            font-size: 400;
+        }
+
+        .address {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.678);
+            font-weight: 400;
+        }
+
+        .whatsapp {
+            background-color: $color-green;
+            width: 141px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 10px;
+            border-radius: 3px;
+            margin-top: 20px;
+            
+            img {
+                margin-right: 5px;
+            }
+
+            p {
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+
+    }
+}

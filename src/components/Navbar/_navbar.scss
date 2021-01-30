@@ -1,0 +1,44 @@
+.navbar {
+    height: 40px;
+    background-color: $color-primary;
+
+    @include respond(big-phone){
+        height: 46px;
+    }
+
+    .navbar__area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    &--left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        p {
+            color: #fff;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: normal;
+            margin-right: 5px;
+            
+        }
+
+        .navbar__logo{
+            width: 80px;
+        }
+    }
+
+    &--right {
+        p {
+            font-weight: 600;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 12px;
+            border-bottom: 1px solid #fff;
+        }
+    }
+}

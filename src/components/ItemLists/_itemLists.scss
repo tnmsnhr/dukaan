@@ -1,0 +1,25 @@
+.itemlist {
+
+    .see__more {
+        background: $color-grey;
+        width: 179px;
+        text-align: center;
+        padding: 5px 8px;
+        border-radius: 4px;
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3{
+            color: $color-black-light;
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        span {
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "base/base";
+
+@import '../components/Navbar/navbar';
+@import '../components/Header/header';
+@import '../components/Carousel/carousel';
+@import '../components/FoodCard/foodCard';
+@import '../components/ItemLists/itemLists';
+@import '../components/ItemLists/ItemList/itemList';
+@import '../components/Footer/footer';
+@import '../components/BottomNav/bottomNav';
+
+
+@import '../sass/components/inputElement';

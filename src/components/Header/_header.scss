@@ -1,0 +1,35 @@
+.header__area {
+    width: 100%;
+    border-bottom: 1px solid $color-border;
+
+    .header__content {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .shop__image {
+            width: 56px;
+            height: 56px;
+            img {
+                width: 100%;
+            }
+        }
+
+        .shop__description {
+            padding-left: 12px;
+            h3 {
+                color: $color-black;
+                font-weight: 600;
+                font-size: 18px;
+            }
+        }
+
+        .verified {
+            color: $color-green;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+    }
+}

@@ -1,0 +1,23 @@
+.food__card{
+
+    .card__item{
+        position: relative;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .card__title {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: 18px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+    }
+}
