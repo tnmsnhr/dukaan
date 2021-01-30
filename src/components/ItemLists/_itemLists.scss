@@ -1,4 +1,17 @@
-.itemlist {
+.itemlists {
+    flex: 2;
+    border: none;
+    
+    @include respond(big-phone){
+        border-left: 1px solid $color-border;
+        border-right: 1px solid $color-border;
+        padding: 20px 30px 0 30px;
+    }
+
+    @include respond(small-phone){
+        border: none;
+        padding: 0;
+    }
 
     .see__more {
         background: $color-grey;

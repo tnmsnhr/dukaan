@@ -1,0 +1,22 @@
+.category {
+    padding: 8px 0;
+    &__heading {
+        display: flex;
+
+        h3 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        span {
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+}
+
+.active__cat {
+    background: linear-gradient(to left, rgba(20, 111, 180, 0.336), rgba(20, 110, 180, 0) );
+    border-right: 4px solid $color-primary;
+    color: $color-primary;
+}

@@ -1,0 +1,8 @@
+.categoryLists {
+    width: 25%;
+    display: none;
+
+    @include respond(big-phone){
+        display: block;
+    }
+}

@@ -1,59 +1,67 @@
-.bottom__nav {
-    padding: 20px 0;
+.bottom__nav--area {
+    display: block;
 
-    &--container {
-        display: flex;
+    @include respond(big-phone){
+        display: none;
     }
 
-    &--item{
-        width: 33%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-        border-radius: 50px;
-
-        img {
-            width: 24px;
-            margin-right: 5px;
-        }
-
-        p {
-            font-size: 15px;
-            font-weight: 600;
-            color: #989898;
-        }
-    }
-
-    .active {
-        p {
-            color: $color-primary !important;
-        }
-        background: lighten($color-primary,50);
-    }
-
-    .cart__item {
-
-        &--details{
+    .bottom__nav {
+        padding: 20px 0;
+    
+        &--container {
             display: flex;
-            position: relative;
         }
-
-        span {
-            width: 16px;
-            height: 16px;
-            background: red;
-            color: #fff;
-            border-radius: 10px; 
-            font-size: 12px;
-            padding: 2px;
-            position: absolute;
-            left: -7px;
-            top: -4px;
+    
+        &--item{
+            width: 33%;
             display: flex;
             justify-content: center;
             align-items: center;
-            
+            padding: 10px;
+            border-radius: 50px;
+    
+            img {
+                width: 24px;
+                margin-right: 5px;
+            }
+    
+            p {
+                font-size: 15px;
+                font-weight: 600;
+                color: #989898;
+            }
+        }
+    
+        .active {
+            p {
+                color: $color-primary !important;
+            }
+            background: lighten($color-primary,50);
+        }
+    
+        .cart__item {
+    
+            &--details{
+                display: flex;
+                position: relative;
+            }
+    
+            span {
+                width: 16px;
+                height: 16px;
+                background: red;
+                color: #fff;
+                border-radius: 10px; 
+                font-size: 12px;
+                padding: 2px;
+                position: absolute;
+                left: -7px;
+                top: -4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
         }
     }
 }

@@ -1,6 +1,12 @@
+.header__area--container {
+    width: 100%;
+}
+
 .header__area {
     width: 100%;
     border-bottom: 1px solid $color-border;
+    display: flex;
+    position: relative;
 
     .header__content {
         display: flex;
@@ -31,5 +37,73 @@
             text-transform: uppercase;
         }
 
+    }
+
+    .header__upperrow {
+        display: flex;
+        justify-content: space-between;
+
+        .header__right {
+            display: none;
+
+            @include respond(big-phone){
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                font-weight: 600;
+                color: $color-black-light;
+            }
+
+            .bottom__nav--item {
+                display: flex;
+            }
+
+            img {
+                margin-right: 5px;
+            }
+
+            .cart__item {
+                margin-right: 20px;
+
+                &--details{
+                    display: flex;
+                    position: relative;
+                }
+        
+                span {
+                    width: 16px;
+                    height: 16px;
+                    background: red;
+                    color: #fff;
+                    border-radius: 10px; 
+                    font-size: 12px;
+                    padding: 2px;
+                    position: absolute;
+                    left: -7px;
+                    top: -4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    
+                }
+            }
+            
+        }
+    }
+
+    .header__lowerrow {
+        
+        @include respond(big-phone){
+            position: relative;
+            width: 100%;
+
+            .search__area{
+                width: 40%;
+                position: absolute;
+                bottom: -33px;
+                left: 50%;
+                transform: translate(-50%);
+            }
+        }
     }
 }

@@ -23,8 +23,8 @@ const ItemLists = () => {
         {image:image5, name:'Kwality Walls Black Currant', sku:1, price:175, discount:0}
     ]
     return (
-        <div className="itemlist">
-            <div className="container">
+        <div className="itemlists">
+            <div className="">
                 <h3 className="heading-md margin-top-lg margin-bottom-md">Ice Creams <span className="badge">10</span></h3>
                 {itemLists.map(item=> <ItemList key={Math.random()} item={item}/>)}
 

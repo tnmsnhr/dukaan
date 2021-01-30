@@ -52,7 +52,11 @@ body {
     }
 
     @include respond(big-phone){
-        width: 95vw;
+        width: 85vw;
+    }
+
+    @include respond(small-phone){
+        width: 90vw;
     }
 }
 

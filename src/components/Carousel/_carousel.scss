@@ -1,4 +1,9 @@
 .carousel__container{
+    display: block;
+
+    @include respond(big-phone){
+        display: none;
+    }
 
     .carousel__card--container {
         display: flex;
